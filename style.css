@@ -1,0 +1,142 @@
+/*roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*cinzel*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: black;
+    background-image: url(img/back-pc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    font-family: roboto;
+}
+
+.container {
+    width: 450px;
+    height: 100vh;
+    /* border: 1px solid white; */
+}
+
+header {
+    margin-top: 30px;
+}
+
+header img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px #e2af6c;
+}
+
+header h1 {
+    font-family: cinzel;
+    font-weight: 300;
+    color: #e2af6c;
+    text-transform: uppercase;
+}
+
+header p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+section {
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+section img {
+    /* border-radius: 20px 20px 20px 20px; */
+    width: 80%;
+    border: 1px solid #e2af6c;
+    transition: .2s;
+}
+
+section img:hover {
+    box-shadow: 0 0 10px #e2af6c;
+    transform: scale(1.03);
+}
+
+
+footer {
+    width: 80%;
+    padding: 15px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #774d16, #e2af6c);
+    text-align: center;
+    line-height: 40px;
+    transition: .2s;
+
+}
+
+footer a:hover {
+    box-shadow: 0 0 5px #e2af6c;
+    transform: scale(1.1);
+}
+
+footer a i {
+    color: black;
+    font-size: 20px;
+}
+
+/*responsivo
+-----------------------------*/
+
+
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 450px;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 400px;
+        height: 100vh;
+        /* border: 1px solid white; */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 350px;
+        height: 100vh;
+        /* border: 1px solid white; */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        width: 300px;
+        height: 100vh;
+        /* border: 1px solid white; */
+    }
+}
